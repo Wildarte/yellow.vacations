@@ -1,0 +1,57 @@
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark: #343434;
+
+    --color-orange: orange;
+    --color-light-orange: 
+}
+
+/* general style */
+.btn-default{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: var(--color-orange);
+    color: var(--color-black);
+    display: block;
+}
+/* general style */
+
+header.header{
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(10,10, 10, .3);
+}
+.content_header{
+    padding: 20px 10px;
+}
+nav.menu{
+    width: 100%;
+}
+nav.menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav.menu ul{
+    text-transform: uppercase;
+}
+
+.hero{
+    background-color: #343434;
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.over_hero{
+    background-color: rgba(10,10, 10, .5);
+    height: 100%;
+}
+.left_hero{
+    color: var(--color-white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
