@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Yellow Vacations</title>
@@ -32,12 +34,12 @@
 
         <section class="hero">
             <div class="over_hero">
-                <div class="container d-flex">
+                <div class="container d-flex content_hero">
                     <div class="f-50 left_hero">
                         
-                        <p>Encontro aqui seu cantinho</p>
-                        <h1>Alugar no Airbnb nunca foi tão fácil!</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae modi dicta odit, totam temporibus cupiditate earum maiores ipsum?</p>
+                        <p class="over_title">Encontro aqui seu cantinho</p>
+                        <h1 class="title-main">Alugar no Airbnb nunca foi tão fácil!</h1>
+                        <p class="desc-default">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae modi dicta odit, totam temporibus cupiditate earum maiores ipsum?</p>
                         
                         <a href="" class="btn-default">Comece agora</a>
                     </div>
@@ -51,67 +53,77 @@
 
         </section>
 
-        <section>
-            <div class="container">
-                <article>
-                    <div></div>
+        <section class="cards">
+            <div class="container content_cards d-flex">
+
+                <article class="card_feat">
+                    <div class="icon_card">
+                        <i class="bi bi-house"></i>
+                    </div>
 
                     <h3>CUIDAMOS DE TUDO</h3>
 
                     <p>Preocupe-se apenas com o rendimento do seu imóvel, todo o resto é com a gente.</p>
                 </article>
 
-                <article>
-                    <div></div>
+                <article class="card_feat">
+                    <div class="icon_card">
+                        <i class="bi bi-house"></i>
+                    </div>
 
                     <h3>SEM TAXAS</h3>
 
                     <p>Nenhuma cobrança de valor de adesão ou anual, só ganhamos se você ganhar também.</p>
                 </article>
 
-                <article>
-                    <div></div>
+                <article class="card_feat">
+                    <div class="icon_card">
+                        <i class="bi bi-house"></i>
+                    </div>
 
                     <h3>PERFIL SUPERHOST</h3>
 
                     <p>Somos classificados pelo Airbnb como um dos melhores anfitriões no Espírito Santo.</p>
                 </article>
 
-                <article>
-                    <div></div>
+                <article class="card_feat">
+                    <div class="icon_card">
+                        <i class="bi bi-house"></i>
+                    </div>
 
                     <h3>TRANSPARÊNCIA</h3>
 
                     <p>Enviamos um relatório mensal com todas as informações relevantes do seu imóvel.</p>
                 </article>
+
             </div>
         </section>
 
-        <section>
+        <section class="sec-default">
             <div class="container">
-                <header>
-                    <h2>Sua casa, nossa hospitalidade.</h2>
+                <header class="head_dep">
+                    <h2 class="title-sec text-center">Sua casa, nossa hospitalidade.</h2>
                 </header>
 
-                <section>
-                    <article>
-                        <div>
-                            <img src="" alt="">
+                <section class="owl-carousel section_dep">
+                    <article class="card_dep">
+                        <div class="photo_dep">
+                            <img src="https://cdn.pixabay.com/photo/2016/03/27/21/52/woman-1284411_960_720.jpg" alt="">
                             <h3>Yago Carvalho</h3>
                         </div>
 
-                        <div>
+                        <div class="text_dep">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem eaque nesciunt repudiandae possimus sunt debitis, tenetur, libero inventore eos ipsa, at omnis expedita sit dignissimos autem quam? Rerum minus quis quod quidem, excepturi sint perferendis tempore eaque ipsum omnis.
                         </div>
                     </article>
 
-                    <article>
-                        <div>
-                            <img src="" alt="">
+                    <article class="card_dep">
+                        <div class="photo_dep">
+                            <img src="https://cdn.pixabay.com/photo/2016/03/27/21/52/woman-1284411_960_720.jpg" alt="">
                             <h3>Yago Carvalho</h3>
                         </div>
 
-                        <div>
+                        <div class="text_dep">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem eaque nesciunt repudiandae possimus sunt debitis, tenetur, libero inventore eos ipsa, at omnis expedita sit dignissimos autem quam? Rerum minus quis quod quidem, excepturi sint perferendis tempore eaque ipsum omnis.
                         </div>
                     </article>
@@ -225,6 +237,31 @@
         </div>
     </footer>
 
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                autoplay:true,
+                autoplayTimeout:4000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:2
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
