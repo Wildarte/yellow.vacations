@@ -20,6 +20,11 @@
     display: block;
     font-size: 1.2em;
     color: var(--color-black);
+    transition: all .23s;
+    box-shadow: 2px 2px 10px rgba(10,10, 10, .3);
+}
+.btn-default:hover{
+    transform: scale(1.1);
 }
 .title-main{
     font-size: 2.8em;
@@ -52,6 +57,9 @@
     overflow: hidden;
     transition: all .23s;
 }
+.btn-blue:hover{
+    transform: scale(1.05);
+}
 .btn-blue::after{
     content: "";
     position: absolute;
@@ -77,7 +85,7 @@ header.header{
     background-color: var(--color-yellow);
 }
 .content_header{
-    padding: 0px 10px;
+    padding: 10px;
     align-items: center;
 }
 .logo_header{
@@ -226,7 +234,7 @@ nav.menu ul li a{
 }
 
 .text_desc{
-    padding: 40px 10px;
+    padding: 40px 10px 0;
     text-align: center;
 }
 .text_desc p{
@@ -269,11 +277,58 @@ nav.menu ul li a{
 .info_card_imovel p{
     font-weight: 300;
 }
+.section_imovel{
+    padding: 20px 10px 60px
+}
+.ban{
+    border-top: 1px solid #ababab;
+    border-bottom: 1px solid #ababab;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(10,10, 10, .5);
+    margin: 40px 0;
+}
+.content_ban{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/09/apartments-1845884_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.sec_about{
+    padding: 80px 10px 0;
+}
+.left_about{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.cta_sec{
+    padding: 60px 10px 40px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--color-blue), var(--color-light-blue));
+}
+.cta_sec h2{
+    color: var(--color-white);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.left_about p{
+    font-size: 1.15em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.btn_cta{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
 
 
 footer.footer{
     background-color: var(--color-dark);
     border-top: 2px solid #454545;
+    color: var(--color-white);
 }
 .content_footer{
     padding: 60px 0 30px;
@@ -282,3 +337,4 @@ footer.footer{
     padding: 10px;
     background-color: var(--color-black);
 }
+

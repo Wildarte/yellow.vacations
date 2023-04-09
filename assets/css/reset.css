@@ -18,7 +18,9 @@ ul{
 a{
     text-decoration: none;
 }
-
+body img{
+    max-width: 100%;
+}
 .container{
     max-width: var(--container);
     margin: auto;
